@@ -1,0 +1,7 @@
+main = do
+    ins <- getLine
+    let xs = map read . words $ ins :: [Int]
+    let x = maximum xs
+    let y = minimum xs
+    let qs = [x,y]
+    putStrLn . unwords . map show $ qs
